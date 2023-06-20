@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.fullContent{
+      width: 100%;
+   height: 100vh;
+   position: relative;
+   background: rgb(155, 177, 252);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.card{
+    
+    position: absolute;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: 0.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.form{
+    visibility: hidden;  
+}
+.form form{    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+.form form input, .form form textarea{
+   text-align: center;
+   padding: 10px;
+   font-size: 15px;
+   border-radius: 10px;
+   border: none;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+   transition: background 0.3s ;
+}
+.form form input:focus, .form form textarea:focus{
+    outline: none;
+    background: #e9e8e8;
+ }
+ .formVis{
+     visibility: visible;
+     z-index: 5 ;
+ }
+
+ 
+
+/*card*/
+.cart{
+    z-index: 1;
+   width: 70%;
+   height: 60%;
+    background: rgb(112, 144, 250);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    transform: rotateY(0deg);
+
+}
+.cart div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart div:first-child{
+    height: 30%;
+    width: 30%;
+background-image: url("/media/persona.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 10px;
+
+}
+.cart div:nth-child(2){
+        height: 50%;
+       
+}
+.cart div:last-child{
+height: 20%;
+width: 100%;
+gap: 20px;
+}
+.cart div:last-child button{
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: background 0.2s ;
+ }
+ .cart div:last-child button:hover{
+    cursor: pointer;
+    background: rgb(100, 114, 161);
+ }
+
+
+ /*Card contacto*/
+
+ .cartContact{
+    visibility: hidden;
+    width: 70%;
+    height: 60vh;
+    background: rgb(245, 220, 81);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    transform: rotateY(180deg);
+
+    
+
+}
+.buttona{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background: #F0F0F0;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;  
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: background 0.2s ;
+}
+.button{
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: background 0.2s ;
+ }
+ .button:hover{
+    cursor: pointer;
+    background: rgb(100, 114, 161);
+ }
+ .buttona:hover{
+    cursor: pointer;
+    background: rgb(100, 114, 161);
+ }
+ .ex{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 425px;
+    top: 20px;
+    border: none;
+    background: transparent;
+ }
+ .ex:hover{
+   cursor: pointer;
+ }
+
+
+
+  /*EXP*/
+
+  .EXP{
+    visibility: hidden;
+    width: 70%;
+    height: 60vh;
+    background: rgb(121, 240, 127);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: rotateY(180deg);
+}
+.verde{
+    visibility: visible;
+    z-index: 1;
+}
+
+.portafolio{
+    visibility: hidden;
+    width: 70%;
+    height: 60vh;
+    background: rgb(253, 116, 116);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: rotateY(180deg);
+}
+
+.salirptf{
+    transition: 1s;
+transform: rotateY(180deg);
+
+}
+.rojo{
+    visibility: visible;
+    transition: 1s;
+    transform: rotateY(0deg);
+    z-index: 1;
+}
+.rotate {
+    transition: 1s;
+    transform: rotateY(180deg);
+    z-index: 0;
+  }
+  .rotate2{
+    visibility: visible;
+    transition: 1s;
+    transform: rotateY(0deg);    
+  }
+  .outVisual{
+    transition: 0.2s;
+    opacity: 0;   
+  }
+
+  
+  
+
